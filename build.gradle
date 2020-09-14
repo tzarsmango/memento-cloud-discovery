@@ -8,6 +8,15 @@ group = 'com.codebenders'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+bootJar {
+    mainClassName = 'com.codebenders.mementoclouddiscovery.MementoCloudDiscoveryApplication'
+    manifest {
+        attributes 'Implementation-Title': project.name,
+                'Implementation-Version': project.version
+    }
+    archiveFileName = 'memento-cloud-discovery.jar'
+}
+
 repositories {
     mavenCentral()
 }

@@ -7,7 +7,7 @@ ENTRYPOINT ["java", "-jar"]
 
 WORKDIR /opt/app
 
-COPY build/libs/memento-cloud-discovery-0.0.1-SNAPSHOT.jar ./memento-cloud-discovery.jar
+COPY build/libs/memento-cloud-discovery.jar .
 
 EXPOSE 4452
 

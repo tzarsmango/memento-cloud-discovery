@@ -30,12 +30,6 @@ jobs:
       - name: Compile and test
         run: ./gradlew build --info
 
-      - name: Download JAR
-        uses: actions/download-artifact@v1
-        with:
-          name: jar
-          path: build/libs
-
       - name: Publish Docker
         uses: elgohr/Publish-Docker-Github-Action@2.21
         with:
