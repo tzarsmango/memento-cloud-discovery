@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - master
-env:
-
 jobs:
   publish:
     name: Publish
