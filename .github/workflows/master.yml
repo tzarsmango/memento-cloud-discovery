@@ -33,7 +33,6 @@ jobs:
       - name: Publish Docker
         uses: elgohr/Publish-Docker-Github-Action@2.21
         with:
-          name: tzarsmango/memento-cloud-discovery/memento-cloud-discovery
+          name: tzarsmango/memento-cloud-discovery
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_TOKEN }}
-          registry: docker.pkg.github.com
